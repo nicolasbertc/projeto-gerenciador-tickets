@@ -1,0 +1,74 @@
+object frm_Principal: Tfrm_Principal
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'Controle de Tickets'
+  ClientHeight = 399
+  ClientWidth = 596
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Client
+    Size.Width = 596.000000000000000000
+    Size.Height = 399.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Layout1: TLayout
+      Align = Top
+      Size.Width = 596.000000000000000000
+      Size.Height = 113.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label1: TLabel
+        Align = Center
+        StyledSettings = [Family, FontColor]
+        Margins.Left = 500.000000000000000000
+        Size.Width = 596.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 22.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Bem-Vindo!'
+        TabOrder = 0
+      end
+    end
+    object Layout2: TLayout
+      Align = Client
+      Size.Width = 596.000000000000000000
+      Size.Height = 286.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Label2: TLabel
+        Position.X = 202.000000000000000000
+        Position.Y = 17.000000000000000000
+        Size.Width = 190.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Escolha uma das op'#231#245'es abaixo:'
+        TabOrder = 1
+      end
+      object Button1: TButton
+        Position.X = 144.000000000000000000
+        Position.Y = 95.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 57.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Funcion'#225'rios'
+        OnClick = Button1Click
+      end
+      object Button2: TButton
+        Position.X = 335.000000000000000000
+        Position.Y = 95.000000000000000000
+        Size.Width = 105.000000000000000000
+        Size.Height = 57.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Tickets'
+        OnClick = Button2Click
+      end
+    end
+  end
+end

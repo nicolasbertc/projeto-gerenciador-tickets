@@ -1,0 +1,430 @@
+object frm_Tickets: Tfrm_Tickets
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'frm_Tickets'
+  ClientHeight = 499
+  ClientWidth = 682
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 682.000000000000000000
+    Size.Height = 499.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'tabcontrolstyle'
+    TabIndex = 1
+    TabOrder = 0
+    TabPosition = None
+    Sizes = (
+      682s
+      499s
+      682s
+      499s
+      682s
+      499s
+      682s
+      499s)
+    object Principal: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Principal'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Layout1: TLayout
+        Align = Top
+        Size.Width = 682.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label1: TLabel
+          Align = Center
+          StyledSettings = [Family, FontColor]
+          Size.Width = 185.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Controle de Tickets'
+          TabOrder = 0
+        end
+        object Button1: TButton
+          Align = MostLeft
+          Size.Width = 73.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Voltar'
+          OnClick = Button1Click
+        end
+      end
+      object Layout2: TLayout
+        Align = Client
+        Size.Width = 682.000000000000000000
+        Size.Height = 449.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object btnCadastrarTickets: TButton
+          Position.X = 96.000000000000000000
+          Position.Y = 157.000000000000000000
+          Size.Width = 97.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Cadastrar Tickets'
+          OnClick = btnCadastrarTicketsClick
+        end
+        object btnDistribuirTickets: TButton
+          Position.X = 268.000000000000000000
+          Position.Y = 157.000000000000000000
+          Size.Width = 93.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Distribuir Tickets'
+          OnClick = btnDistribuirTicketsClick
+        end
+        object Button4: TButton
+          Position.X = 432.000000000000000000
+          Position.Y = 157.000000000000000000
+          Size.Width = 97.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Relat'#243'rio'
+          OnClick = Button4Click
+        end
+      end
+    end
+    object Cadastrar_Tickets: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Cadastrar_Tickets'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Layout3: TLayout
+        Align = Top
+        Size.Width = 682.000000000000000000
+        Size.Height = 62.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label2: TLabel
+          Align = Center
+          StyledSettings = [Family, FontColor]
+          Size.Width = 189.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Cadastro de Ticket'
+          TabOrder = 0
+        end
+        object Button5: TButton
+          Align = MostLeft
+          Size.Width = 65.000000000000000000
+          Size.Height = 62.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Voltar'
+          OnClick = Button5Click
+        end
+      end
+      object Layout5: TLayout
+        Align = Top
+        Position.Y = 62.000000000000000000
+        Size.Width = 682.000000000000000000
+        Size.Height = 67.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object edtQtdTickets: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 3
+          Position.Y = 34.000000000000000000
+          Size.Width = 639.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Insira a quantidade de tickets que deseja criar'
+        end
+        object Label3: TLabel
+          StyledSettings = [Family, FontColor]
+          Position.Y = 8.000000000000000000
+          Size.Width = 682.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Quantidade de Tickets'
+          TabOrder = 2
+        end
+      end
+      object btnInserir: TButton
+        Position.X = 265.000000000000000000
+        Position.Y = 232.000000000000000000
+        TabOrder = 3
+        Text = 'Adicionar'
+        OnClick = btnInserirClick
+      end
+    end
+    object Distribuir_Tickets: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Distribuir_Tickets'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Layout4: TLayout
+        Align = Top
+        Size.Width = 682.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label4: TLabel
+          Align = Center
+          StyledSettings = [Family, FontColor]
+          Size.Width = 189.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Distribuir Tickets'
+          TabOrder = 0
+        end
+        object Button2: TButton
+          Align = MostLeft
+          Size.Width = 65.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Voltar'
+          OnClick = Button5Click
+        end
+      end
+      object Layout6: TLayout
+        Align = Client
+        Size.Width = 682.000000000000000000
+        Size.Height = 449.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Layout7: TLayout
+          Align = Top
+          Size.Width = 682.000000000000000000
+          Size.Height = 97.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object ComboEdit1: TComboEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 0
+            ItemHeight = 19.000000000000000000
+            ItemIndex = -1
+            Text = 'Nomes dos colaborador'
+            Position.X = 2.000000000000000000
+            Position.Y = 33.000000000000000000
+            Size.Width = 185.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Label5: TLabel
+            StyledSettings = [Family, FontColor]
+            Size.Width = 187.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Escolha o Colaborador:'
+            TabOrder = 3
+          end
+          object Label6: TLabel
+            StyledSettings = [Family, FontColor]
+            Position.X = 223.000000000000000000
+            Position.Y = 28.000000000000000000
+            Size.Width = 160.000000000000000000
+            Size.Height = 29.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Quantidade de Tickets:'
+            TabOrder = 2
+          end
+          object edtQtd: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 4
+            Position.X = 391.000000000000000000
+            Position.Y = 33.000000000000000000
+            Size.Width = 170.000000000000000000
+            Size.Height = 24.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Informe o n'#250'mero de tickets'
+          end
+        end
+        object btnDistribuir: TButton
+          Position.X = 259.000000000000000000
+          Position.Y = 176.000000000000000000
+          TabOrder = 1
+          Text = 'Distribuir'
+          OnClick = btnDistribuirClick
+        end
+      end
+    end
+    object Relatorio_Tickets: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Relatorio_Tickets'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Layout8: TLayout
+        Align = Top
+        Size.Width = 682.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label7: TLabel
+          Align = Center
+          StyledSettings = [Family, FontColor]
+          Size.Width = 189.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Relat'#243'rio'
+          TabOrder = 0
+        end
+        object Button3: TButton
+          Align = MostLeft
+          Size.Width = 65.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Voltar'
+          OnClick = Button5Click
+        end
+      end
+      object Layout9: TLayout
+        Align = Top
+        Position.Y = 50.000000000000000000
+        Size.Width = 682.000000000000000000
+        Size.Height = 399.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Calendar1: TCalendar
+          Date = 45543.000000000000000000
+          Position.X = 24.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 185.000000000000000000
+          Size.Height = 153.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          OnDateSelected = Calendar1DayClick
+          OnDayClick = Calendar1DayClick
+        end
+        object edtData: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 1
+          Position.X = 48.000000000000000000
+          Position.Y = 224.000000000000000000
+          Visible = False
+        end
+        object ListViewTickets: TListView
+          ItemAppearanceClassName = 'TDynamicAppearance'
+          ItemEditAppearanceClassName = 'TDynamicAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          Position.X = 232.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 442.000000000000000000
+          Size.Height = 369.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+            item
+              AppearanceObjectName = 'txtIDTicket'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.Width = 60.000000000000000000
+              Appearance.Height = 44.000000000000000000
+            end
+            item
+              AppearanceObjectName = 'txtNome'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.Width = 200.000000000000000000
+              Appearance.Height = 44.000000000000000000
+              Appearance.PlaceOffset.X = 56.000000000000000000
+            end
+            item
+              AppearanceObjectName = 'txtDtentrega'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.Width = 150.000000000000000000
+              Appearance.Height = 44.000000000000000000
+              Appearance.PlaceOffset.X = 256.000000000000000000
+            end>
+          ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+            item
+              AppearanceObjectName = 'Text1'
+              AppearanceClassName = 'TTextObjectAppearance'
+            end>
+        end
+        object Label8: TLabel
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 24.000000000000000000
+          Position.Y = 161.000000000000000000
+          Size.Width = 185.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 9.000000000000000000
+          Text = 'Clique no dia que deseja verificar a distribui'#231#227'o de tickets'
+          TabOrder = 3
+        end
+      end
+    end
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\Users\Nicolas\Desktop\projeto-gerenciador-tickets\Ba' +
+        'nco\gerenciador-tickets'
+      'DriverID=SQLite')
+    Left = 248
+    Top = 144
+  end
+  object FDQTickets: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'select * from tickets')
+    Left = 464
+    Top = 144
+  end
+  object FDQFuncionarios1: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'select * from funcionarios')
+    Left = 376
+    Top = 136
+  end
+end

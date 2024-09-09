@@ -1,0 +1,397 @@
+object frm_Funcionario: Tfrm_Funcionario
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'frm_Funcionario'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TabControl: TTabControl
+    Align = Client
+    Locked = True
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'tabcontrolstyle'
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = None
+    Sizes = (
+      640s
+      480s
+      640s
+      480s
+      640s
+      480s)
+    object Pesquisa: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Pesquisa'
+      ExplicitSize.cx = 82.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Layout1: TLayout
+        Align = Top
+        Size.Width = 640.000000000000000000
+        Size.Height = 65.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label1: TLabel
+          StyledSettings = [Family, FontColor]
+          Position.X = 240.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 153.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 22.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Funcion'#225'rios'
+          TabOrder = 1
+        end
+        object btnVoltar: TButton
+          Align = MostLeft
+          Size.Width = 65.000000000000000000
+          Size.Height = 65.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Voltar'
+          OnClick = btnVoltarClick
+        end
+        object btnAdicionarFunc: TButton
+          Position.X = 553.000000000000000000
+          Position.Y = 24.000000000000000000
+          Size.Width = 79.000000000000000000
+          Size.Height = 24.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Cadastrar'
+          OnClick = btnAdicionarFuncClick
+        end
+      end
+      object Layout2: TLayout
+        Align = Top
+        Position.Y = 65.000000000000000000
+        Size.Width = 640.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object edtPesquisa: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 0
+          Position.X = 8.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 537.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Pesquisar funcion'#225'rio por nome ou apenas clique em pesquisar'
+        end
+        object btnPesquisar: TButton
+          Position.X = 553.000000000000000000
+          Position.Y = 10.000000000000000000
+          TabOrder = 1
+          Text = 'Pesquisar'
+          OnClick = btnPesquisarClick
+        end
+      end
+      object ListView1: TListView
+        ItemAppearanceClassName = 'TDynamicAppearance'
+        ItemEditAppearanceClassName = 'TDynamicAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Size.Width = 640.000000000000000000
+        Size.Height = 375.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+          item
+            AppearanceObjectName = 'txtID'
+            AppearanceClassName = 'TTextObjectAppearance'
+            Appearance.Width = 60.000000000000000000
+            Appearance.Height = 44.000000000000000000
+          end
+          item
+            AppearanceObjectName = 'txtNome'
+            AppearanceClassName = 'TTextObjectAppearance'
+            Appearance.Width = 400.000000000000000000
+          end
+          item
+            AppearanceObjectName = 'txtCpf'
+            AppearanceClassName = 'TTextObjectAppearance'
+            Appearance.Width = 100.000000000000000000
+            Appearance.Height = 44.000000000000000000
+            Appearance.PlaceOffset.X = 400.000000000000000000
+          end
+          item
+            AppearanceObjectName = 'txtAtivo'
+            AppearanceClassName = 'TTextObjectAppearance'
+            Appearance.Width = 60.000000000000000000
+            Appearance.Height = 44.000000000000000000
+            Appearance.PlaceOffset.X = 504.000000000000000000
+          end>
+        ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+          item
+            AppearanceObjectName = 'Text1'
+            AppearanceClassName = 'TTextObjectAppearance'
+          end>
+        OnItemClickEx = ListView1ItemClickEx
+      end
+    end
+    object Cadastro: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Cadastro'
+      ExplicitSize.cx = 82.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object btnInserir: TButton
+        Position.X = 296.000000000000000000
+        Position.Y = 230.000000000000000000
+        TabOrder = 0
+        Text = 'Adicionar'
+        OnClick = btnInserirClick
+        object Label4: TLabel
+          Position.X = 24.000000000000000000
+          Size.Width = 17.000000000000000000
+          Size.Height = 1.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Label4'
+          TabOrder = 5
+        end
+      end
+      object Layout3: TLayout
+        Align = Top
+        Size.Width = 640.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Label2: TLabel
+          Align = Center
+          StyledSettings = [Family, FontColor]
+          Size.Width = 233.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Cadastro de Funcion'#225'rio'
+          TabOrder = 0
+        end
+      end
+      object Layout4: TLayout
+        Align = Top
+        Position.Y = 50.000000000000000000
+        Size.Width = 640.000000000000000000
+        Size.Height = 151.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Layout5: TLayout
+          Align = Top
+          Size.Width = 640.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object edtNome: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 3
+            Position.X = 1.000000000000000000
+            Position.Y = 20.000000000000000000
+            Size.Width = 639.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Insira o nome completo'
+          end
+          object Label3: TLabel
+            Align = Top
+            StyledSettings = [Family, FontColor]
+            Size.Width = 640.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Nome'
+            TabOrder = 2
+          end
+        end
+        object Layout6: TLayout
+          Align = Top
+          Position.Y = 50.000000000000000000
+          Size.Width = 640.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object edtCpf: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 4
+            KeyboardType = DecimalNumberPad
+            Position.X = 1.000000000000000000
+            Position.Y = 28.000000000000000000
+            Size.Width = 639.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Insira somente os digitos'
+          end
+          object Label5: TLabel
+            StyledSettings = [Family, FontColor]
+            Position.X = 1.000000000000000000
+            Position.Y = 3.000000000000000000
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'CPF'
+            TabOrder = 5
+          end
+        end
+      end
+    end
+    object Editar: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Editar'
+      ExplicitSize.cx = 51.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Layout7: TLayout
+        Align = Top
+        Size.Width = 640.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label6: TLabel
+          Align = Center
+          StyledSettings = [Family, FontColor]
+          Size.Width = 160.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Editar Funcion'#225'rio'
+          TabOrder = 0
+        end
+      end
+      object Layout8: TLayout
+        Align = Top
+        Position.Y = 50.000000000000000000
+        Size.Width = 640.000000000000000000
+        Size.Height = 151.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Layout10: TLayout
+          Align = Top
+          Size.Width = 640.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object edtEdicaoNome: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 3
+            Position.X = 1.000000000000000000
+            Position.Y = 20.000000000000000000
+            Size.Width = 639.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Insira o nome completo'
+          end
+          object Label8: TLabel
+            Align = Top
+            StyledSettings = [Family, FontColor]
+            Size.Width = 640.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Nome'
+            TabOrder = 2
+          end
+        end
+        object Layout9: TLayout
+          Align = Top
+          Position.Y = 50.000000000000000000
+          Size.Width = 640.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object edtEdicaoCpf: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 4
+            KeyboardType = DecimalNumberPad
+            Position.X = 1.000000000000000000
+            Position.Y = 28.000000000000000000
+            Size.Width = 639.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Insira somente os digitos'
+          end
+          object Label7: TLabel
+            StyledSettings = [Family, FontColor]
+            Position.X = 1.000000000000000000
+            Position.Y = 3.000000000000000000
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'CPF'
+            TabOrder = 5
+          end
+          object edtEdicaoSituacao: TCheckBox
+            Position.X = 24.000000000000000000
+            Position.Y = 71.000000000000000000
+            TabOrder = 6
+            Text = 'Ativo'
+          end
+        end
+      end
+      object btnSalvarEdicao: TButton
+        Position.X = 270.000000000000000000
+        Position.Y = 262.000000000000000000
+        Size.Width = 115.000000000000000000
+        Size.Height = 43.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Salvar'
+        OnClick = btnSalvarEdicaoClick
+      end
+      object edtEdicaoCodigo: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 3
+        Position.X = 270.000000000000000000
+        Position.Y = 342.000000000000000000
+        Visible = False
+      end
+    end
+  end
+  object FDQFuncionarios: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'select *'
+      'from funcionarios')
+    Left = 288
+    Top = 240
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\Users\Nicolas\Desktop\projeto-gerenciador-tickets\Ba' +
+        'nco\gerenciador-tickets'
+      'DriverID=SQLite')
+    Left = 288
+    Top = 176
+  end
+end

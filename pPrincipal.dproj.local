@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/03/30 23:52:29.000.085,=C:\Users\Nicolas\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/06/09 15:12:35.000.852,=C:\Users\Nicolas\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/06/09 15:13:12.000.238,=C:\Users\Nicolas\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/08/31 23:31:34.000.384,=C:\Users\Nicolas\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/08/31 23:38:40.000.028,=C:\Users\Nicolas\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/08/31 23:41:40.000.917,C:\Users\Nicolas\Desktop\projeto-gerenciador-tickets\uPrincipal.fmx=C:\Users\Nicolas\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2024/08/31 23:41:40.000.917,C:\Users\Nicolas\Desktop\projeto-gerenciador-tickets\uPrincipal.pas=C:\Users\Nicolas\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/08/31 23:43:04.000.944,=C:\Users\Nicolas\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2024/08/31 23:43:22.000.929,C:\Users\Nicolas\Desktop\projeto-gerenciador-tickets\uFuncionario.pas=C:\Users\Nicolas\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2024/08/31 23:43:22.000.929,C:\Users\Nicolas\Desktop\projeto-gerenciador-tickets\uFuncionario.fmx=C:\Users\Nicolas\Documents\Embarcadero\Studio\Projects\Unit2.fmx</Transaction>
+    <Transaction>2024/08/31 23:46:01.000.631,C:\Users\Nicolas\Desktop\projeto-gerenciador-tickets\pPrincipal.dproj=C:\Users\Nicolas\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2024/09/07 14:16:35.000.964,=C:\Users\Nicolas\Desktop\projeto-gerenciador-tickets\Unit1.pas</Transaction>
+    <Transaction>2024/09/07 14:17:37.000.521,=C:\Users\Nicolas\Desktop\projeto-gerenciador-tickets\Unit1.pas</Transaction>
+    <Transaction>2024/09/07 14:17:58.000.672,C:\Users\Nicolas\Desktop\projeto-gerenciador-tickets\Unit1.fmx=C:\Users\Nicolas\Desktop\projeto-gerenciador-tickets\uTicket.fmx</Transaction>
+    <Transaction>2024/09/07 14:17:58.000.672,C:\Users\Nicolas\Desktop\projeto-gerenciador-tickets\Unit1.pas=C:\Users\Nicolas\Desktop\projeto-gerenciador-tickets\uTicket.pas</Transaction>
+    <Transaction>2024/09/07 19:19:23.000.879,=C:\Users\Nicolas\Desktop\projeto-gerenciador-tickets\Unit1.pas</Transaction>
+    <Transaction>2024/09/07 19:19:59.000.863,C:\Users\Nicolas\Desktop\projeto-gerenciador-tickets\Unit1.pas=C:\Users\Nicolas\Desktop\projeto-gerenciador-tickets\uTickets.pas</Transaction>
+    <Transaction>2024/09/07 19:19:59.000.863,C:\Users\Nicolas\Desktop\projeto-gerenciador-tickets\Unit1.fmx=C:\Users\Nicolas\Desktop\projeto-gerenciador-tickets\uTickets.fmx</Transaction>
+  </Transactions>
+</BorlandProject>
